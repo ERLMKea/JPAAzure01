@@ -31,6 +31,7 @@ public class StudentRestController {
         std.setName("Autogen"+ lst.size());
         studentRepository.save(std);
         List<Student> lst2 = studentRepository.findAll();
+        System.out.println("Student added =" + std.getName());
         return lst2;
     }
 
